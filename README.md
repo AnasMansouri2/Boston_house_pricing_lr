@@ -15,4 +15,3 @@
 
 4. ### Déploiement sur le Cloud :
  Le projet sera déployé sur la plateforme cloud Heroku pour offrir une accessibilité facile et une mise à l'échelle de l'application.
-

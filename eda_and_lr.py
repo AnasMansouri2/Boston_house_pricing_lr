@@ -105,6 +105,9 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
+# Creation et importation du pickle file pour le scaler:
+pickle.dump(scaler,open('scaling.pkl','wb'))
+
 
 #=======================================================================================================#
 
