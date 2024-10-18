@@ -1,0 +1,12 @@
+version: '3.8'  # Version de la syntaxe de Docker Compose
+
+services:
+  web:
+    build: .
+    ports:
+      - "5050:5050"  # Lier le port 5000 de l'hôte au port 5050 du conteneur
+    environment:
+      - FLASK_ENV=development  # Optionnel : pour activer le mode développement de Flask
+    volumes:
+      - .:/app  # Monter le répertoire actuel dans le conteneur
+
