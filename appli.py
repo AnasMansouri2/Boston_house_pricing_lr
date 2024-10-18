@@ -31,7 +31,7 @@ def predict():
     final_input=scalar.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=regmodel.predict(final_input)[0]
-    return render_template("home.html",prediction_text="Le prix predit du bien immobilier est{}".format(output))
+    return render_template("home.html",prediction_text="Le prix predit du bien immobilier est de : {}".format(output))
 
 
 
